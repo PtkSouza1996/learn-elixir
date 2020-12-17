@@ -1,0 +1,18 @@
+<h1>Show Posts</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @posts.title %>
+  </li>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @posts.body %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.posts_path(@conn, :edit, @posts) %></span>
+<span><%= link "Back", to: Routes.posts_path(@conn, :index) %></span>
